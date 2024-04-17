@@ -1,0 +1,101 @@
+<!--Estructura HTML 5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <!--Enlazamos estilos, CDN Bootstrap y agregamos un favicon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/estilos-sobre-nosotros.css">
+    <link rel="icon" href="img/logo farmacia.png" type="image/x-icon">
+</head>
+<!--Cuerpo de la página-->
+<body>
+  <!--Navbar Responsiva-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #284b63;">
+        <a class="navbar-brand" href="index.html" style="margin-inline: 60px;"><img src="img/logo farmacia.png" style="width: 60px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!--Enlaces de la navbar-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="margin-inline: 60px;">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="margin-inline: 60px;">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="margin-inline: 40px;">
+                Medicamentos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Analgésicos</a>
+                <a class="dropdown-item" href="#">Antialérgicos</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ver imágenes</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="margin-inline: 60px;" href="encuentranos.html" target="_blank">Encuéntranos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!--Fin de la navbar-->
+
+<!--Container de sobre nosotros-->
+    <section class="container-section">
+        <h1 class="title">Sobre nosotros</h1>
+        <img src="img/farmacia-sobre-nosotros.jpg" alt="">
+        <h2>Nuestra historia</h2>
+        <p>En los albores del siglo pasado, en un tranquilo pueblo rodeado de campos verdes y colinas ondulantes, nació "La Escondida". Fundada por la joven farmacéutica Emilia, quien había regresado a su pueblo natal después de años de estudios en la ciudad, la farmacia comenzó como un modesto sueño en el corazón de la comunidad. Con apenas unas pocas estanterías y un mostrador de madera tallada a mano, Emilia dedicaba largas horas a mezclar y preparar medicamentos siguiendo las recetas aprendidas de su abuela, una curandera local.</p>        </p>
+
+    </section>
+<!--Fin container-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Empresa</h4>
+              <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Politica de privacidad</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Ayuda</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Estado de la orden</a></li>
+                <li><a href="#">Opciones de pago</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Encuéntranos</h4>
+              <ul>
+                <li><a href="#">Lugar 1</a></li>
+                <li><a href="#">Lugar 2</a></li>
+                <li><a href="#">Lugar 3</a></li>
+                <li><a href="#">Lugar 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+     </footer>   
+<!--Fin footer-->
+
+
+<!--Scripts necesarios para ejecutar bootstrap-->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+<!--Fin del cuerpo-->
+</html>

@@ -1,12 +1,214 @@
+<!--Estructura HTML 5-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>La Escondida</title>
+    <!--Enlazamos estilos, CDN Bootstrap y agregamos un favicon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/estilos-index.css">
+    <link rel="icon" href="img/logo farmacia.png" type="image/x-icon">
 </head>
+<!--Cuerpo de la página-->
 <body>
+<!--Navbar Responsiva-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #284b63;">
+        <a class="navbar-brand" href="index.html" style="margin-inline: 60px;"><img src="img/logo farmacia.png" style="width: 60px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!--Enlaces de la navbar-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="margin-inline: 60px;">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-nosotros.html" target="_blank" style="margin-inline: 60px;">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="margin-inline: 40px;">
+                Medicamentos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Analgésicos</a>
+                <a class="dropdown-item" href="#">Antialérgicos</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ver imágenes</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="margin-inline: 60px;" href="encuentranos.html" target="_blank">Encuéntranos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!--Fin de la navbar-->
+
+<!--Banner-->
+    <div class="banner container-fluid">
+        <div class="capa"></div>
+        <div class="info">
+          <h1>Bienvenidos a La Escondida</h1>
+          <p>Medicamentos de calidad a buen precio.</p>
+          <button><a href="#medicamentos">Ver Productos</a></button>
+        </div>
+    </div>
+
+    <!--Carrusel-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- Imágenes deñ carrusel -->
+        <div class="carousel-inner">
+            <h2 class="text-center">Productos con descuentos</h2>
+          <div class="carousel-item active text-center" >
+            <img src="img/slider-1.jpg" alt="" width="800" height="500">
+          </div>
+          <div class="carousel-item text-center">
+            <img src="img/slider-2.jpg" alt="" width="800" height="500">
+          </div>
+          <div class="carousel-item text-center">
+            <img src="img/slider-3.jpg" alt="" width="800" height="500">
+          </div>
+        </div>
+        
+        <!-- Flechas de control Izquierda y Derecha -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+             
+
+      	<!--   Tarjetas de medicamentos/ Container de las targetas-->
+    <div class="title-cards" id="medicamentos">
+        <h2>Productos más vendidos</h2>
+    </div>
+    <div class="container-card">
+
+    <div class="card">
+    <figure>
+        <img src="img/amoxicilina.jpg">
+    </figure>
+    <div class="contenido-card">
+        <h3>Amoxicilina</h3>
+        <p>La amoxicilina es un antibiótico semisintético derivado de la penicilina.</p>
+        <a href="#">Leer Màs</a>
+    </div>
+    </div>
+    <div class="card">
+    <figure>
+        <img src="img/ibuprofeno.jpg">
+    </figure>
+    <div class="contenido-card">
+        <h3>Ibupofreno</h3>
+        <p>El ibuprofeno es un antiinflamatorio no esteroideo, utilizado frecuentemente como antipirético, analgésico y antiinflamatorio.</p>
+        <a href="#">Leer Màs</a>
+    </div>
+    </div>
+    <div class="card">
+    <figure>
+        <img src="img/ketorolaco.jpg">
+    </figure>
+    <div class="contenido-card">
+        <h3>Ketorolaco</h3>
+        <p>El ketorolaco es un antiinflamatorio no esteroideo de la familia de los derivados heterocíclicos del ácido acético.</p>
+        <a href="#">Leer Màs</a>
+    </div>
+    </div>
+    <div class="card">
+    <figure>
+        <img src="img/lansoprazol.jpg">
+    </figure>
+    <div class="contenido-card">
+        <h3>Lansoprazol</h3>
+        <p>El lansoprazol es un medicamento del grupo de inhibidores de la bomba de protones que actúa a nivel del estómago.</p>
+        <a href="#">Leer Màs</a>
+    </div>
+    </div>
+    <div class="card">
+    <figure>
+        <img src="img/naproxeno.jpg">
+    </figure>
+    <div class="contenido-card">
+        <h3>Naproxeno</h3>
+        <p>El naproxeno es un medicamento antiinflamatorio no esteroideo que se emplea en el tratamiento del dolor leve a moderado.</p>
+        <a href="#">Leer Màs</a>
+    </div>
+    </div>
+    <div class="card">
+    <figure>
+        <img src="img/paracetamol.jpg">
+    </figure>
+    <div class="contenido-card">
+        <h3>Paracetamol</h3>
+        <p>El paracetamol es uno de los medicamentos más utilizados frente al dolor y la fiebre.</p>
+        <a href="#">Leer Màs</a>
+    </div>
+    </div>
+    </div>
+    <!--Fin   Tarjetas-->
+
+<!--Container Noticias-->
+    <div class="container-fluid container-noticia">
+        <h3>Nuevas noticias</h3>
+        <img src="img/noticia.jpg" class="img-fluid text-center">
+        <p>Medicamentos para el asma pueden ayudar a reducir las reacciones graves en personas con múltiples alergias alimentarias, según un estudio.</p>
+        <a target="_blank" href="https://cnnespanol.cnn.com/2024/02/26/medicamentos-asma-reacciones-graves-alergias-alimentarias-estudio-trax/">Link noticia</a>
+        <h6>Otras noticias:</h6>
+        <a target="_blank" href="https://www.elperiodico.com/es/vida-y-estilo/20240417/metformina-farmaco-antiedad-combatir-envejecimiento-enfermedades-edad-dv-101180950">Noticia 2</a>
+    </div>
+    <!--Fin container noticias-->
     
+    <!--Footer/ Pie de página-->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Politica de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Compras</a></li>
+              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#">Estado de la orden</a></li>
+              <li><a href="#">Opciones de pago</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Encuéntranos</h4>
+            <ul>
+              <li><a href="#">Lugar 1</a></li>
+              <li><a href="#">Lugar 2</a></li>
+              <li><a href="#">Lugar 3</a></li>
+              <li><a href="#">Lugar 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+   </footer>   
+      <!--Fin del pie de página-->
+
+      <!--Scripts necesarios para ejecutar bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
+<!--Fin del cuerpo-->
 </html>
